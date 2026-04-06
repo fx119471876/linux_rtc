@@ -39,7 +39,7 @@ date_show(struct device *dev, struct device_attribute *attr, char *buf)
 	if (retval)
 		return retval;
 	
-	return spintf(buf,"%04d-%02d-%02d\n",tm.tm_year+1900,tm.tm_mon+1,tm.tm_mday);
+	return sprintf(buf,"%04d-%02d-%02d\n",tm.tm_year+1900,tm.tm_mon+1,tm.tm_mday);
 	//	return sprintf(buf, "%ptRd\n", &tm);
 }
 static DEVICE_ATTR_RO(date);
