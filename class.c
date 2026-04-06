@@ -7,7 +7,7 @@
  *
  * class skeleton from drivers/hwmon/hwmon.c
  */
-
+/*xfeng_test*/
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <linux/module.h>
