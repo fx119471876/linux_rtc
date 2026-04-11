@@ -222,7 +222,9 @@ static int rv8803_get_time(struct device *dev, struct rtc_time *tm)
 	tm->tm_mday = bcd2bin(date[RV8803_DAY] & 0x3f);
 	tm->tm_mon  = bcd2bin(date[RV8803_MONTH] & 0x1f) - 1;
 	tm->tm_year = bcd2bin(date[RV8803_YEAR]) + 100;
-
+	printk(KERN_INFO "11111111111111111111111111111");
+	
+	printk(KERN_INFO "222222222222222222222222222222");
 	return 0;
 }
 
